@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import Link from 'next/link';
 import { BsBagCheckFill } from 'react-icons/bs';
 import { useStateContext } from '../context/stateContext';
 import { runFireworks } from '../lib/utils';
-function success() {
+function Success() {
 
     const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
     useEffect(() => {
@@ -37,4 +37,4 @@ function success() {
   )
 }
 
-export default success
+export default Success
